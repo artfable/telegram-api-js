@@ -4,7 +4,7 @@
  * @author artfable
  * 19.01.17
  */
-;(function(factory) {
+;((factory) => {
     var root = (typeof window == 'object' && window.window == window && window)
         || (typeof self == 'object' && self.self == self && self)
         || (typeof global == 'object' && global.global == global && global);
@@ -106,6 +106,10 @@
         },
         SEND_MESSAGE: {
             name: 'sendMessage',
+            type: 'POST'
+        },
+        SEND_STICKER: {
+            name: 'sendSticker',
             type: 'POST'
         }
     };
